@@ -21,7 +21,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Appzcoder\\CrudGenerator\\": "src/"
+            "Customappzcoder\\CrudGenerator\\": "src/"
         }
     },
     "minimum-stability": "stable",
