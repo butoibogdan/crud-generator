@@ -1,4 +1,4 @@
-<?php namespace Customappzcoder\CrudGenerator;
+<?php namespace Butoibogdan\CrudGenerator;
 use Illuminate\Console\GeneratorCommand;
 use Symfony\Component\Console\Input\InputOption;
 use Schema;
