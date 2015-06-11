@@ -1,4 +1,4 @@
-<?php namespace Customappzcoder\CrudGenerator;
+<?php namespace Butoibogdan\CrudGenerator;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -19,11 +19,11 @@ class CrudGeneratorServiceProvider extends ServiceProvider {
 	public function register()
 	{
         $this->commands(
-        	'Customappzcoder\CrudGenerator\CrudCommand',
-			'Customappzcoder\CrudGenerator\CrudControllerCommand',
-			'Customappzcoder\CrudGenerator\CrudModelCommand',
-			'Customappzcoder\CrudGenerator\CrudMigrationCommand',
-			'Customappzcoder\CrudGenerator\CrudViewCommand'
+        	        'Butoibogdan\CrudGenerator\CrudCommand',
+			'Butoibogdan\CrudGenerator\CrudControllerCommand',
+			'Butoibogdan\CrudGenerator\CrudModelCommand',
+			'Butoibogdan\CrudGenerator\CrudMigrationCommand',
+			'Butoibogdan\CrudGenerator\CrudViewCommand'
         );
 	}
 
