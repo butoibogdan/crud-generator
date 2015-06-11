@@ -21,7 +21,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Customappzcoder\\CrudGenerator\\": "src/"
+            "Butoibogdan\\CrudGenerator\\": "src/"
         }
     },
     "minimum-stability": "stable",
