@@ -75,8 +75,8 @@ class CrudViewCommand extends Command {
                 $formFields .= 
                     "<div class=\"form-group\">
                         {!! Form::label('".$item['name']."', '".$label.": ', ['class' => 'col-md-12 control-label']) !!}
-                        {!! Form::textarea('".$item['name']."', null, ['class' => 'form-control','id'=>'editorck']) !!}
-                        <script>CKEDITOR.replace('editorck');</script>
+                        {!! Form::textarea('".$item['name']."', null, ['class' => 'form-control','id'=>'editorck_".$item['name']."']) !!}
+                        <script>CKEDITOR.replace('editorck_".$item['name']."');</script>
                     </div>";
             } elseif( $item['type']=='password' ) {
                 $formFields .= 
