@@ -68,43 +68,33 @@ class CrudViewCommand extends Command {
             if( $item['type']=='string' ) {
                 $formFields .= 
                     "<div class=\"form-group\">
-                        {!! Form::label('".$item['name']."', '".$label.": ', ['class' => 'col-sm-3 control-label']) !!}
-                        <div class=\"col-sm-6\"> 
-                            {!! Form::text('".$item['name']."', null, ['class' => 'form-control']) !!}
-                        </div>    
+                        {!! Form::label('".$item['name']."', '".$label.": ', ['class' => 'col-md-12 control-label']) !!}
+                        {!! Form::text('".$item['name']."', null, ['class' => 'form-control']) !!}
                     </div>";
             } elseif( $item['type']=='text' ) {
                 $formFields .= 
                     "<div class=\"form-group\">
-                        {!! Form::label('".$item['name']."', '".$label.": ', ['class' => 'col-sm-3 control-label']) !!}
-                        <div class=\"col-sm-6\"> 
-                            {!! Form::textarea('".$item['name']."', null, ['class' => 'form-control','id'=>'editorck']) !!}
-                            <script>CKEDITOR.replace('editorck');</script>
-                        </div>    
+                        {!! Form::label('".$item['name']."', '".$label.": ', ['class' => 'col-md-12 control-label']) !!}
+                        {!! Form::textarea('".$item['name']."', null, ['class' => 'form-control','id'=>'editorck']) !!}
+                        <script>CKEDITOR.replace('editorck');</script>
                     </div>";
             } elseif( $item['type']=='password' ) {
                 $formFields .= 
                     "<div class=\"form-group\">
-                        {!! Form::label('".$item['name']."', '".$label.": ', ['class' => 'col-sm-3 control-label']) !!}
-                        <div class=\"col-sm-6\"> 
-                            {!! Form::password('".$item['name']."', null, ['class' => 'form-control']) !!}
-                        </div>    
+                        {!! Form::label('".$item['name']."', '".$label.": ', ['class' => 'col-md-12 control-label']) !!}
+                        {!! Form::password('".$item['name']."', null, ['class' => 'form-control']) !!}
                     </div>";
             } elseif( $item['type']=='email' ) {
                 $formFields .= 
                     "<div class=\"form-group\">
-                        {!! Form::label('".$item['name']."', '".$label.": ', ['class' => 'col-sm-3 control-label']) !!}
-                        <div class=\"col-sm-6\"> 
-                            {!! Form::email('".$item['name']."', null, ['class' => 'form-control']) !!}
-                        </div>    
+                        {!! Form::label('".$item['name']."', '".$label.": ', ['class' => 'col-md-12 control-label']) !!}
+                        {!! Form::email('".$item['name']."', null, ['class' => 'form-control']) !!}
                     </div>";                          
             } else {
                 $formFields .= 
                     "<div class=\"form-group\">
-                        {!! Form::label('".$item['name']."', '".$label.": ', ['class' => 'col-sm-3 control-label']) !!}
-                        <div class=\"col-sm-6\"> 
-                            {!! Form::text('".$item['name']."', null, ['class' => 'form-control']) !!}
-                        </div>    
+                        {!! Form::label('".$item['name']."', '".$label.": ', ['class' => 'col-md-12 control-label']) !!}
+                        {!! Form::text('".$item['name']."', null, ['class' => 'form-control']) !!}
                     </div>";
             }       
         }
