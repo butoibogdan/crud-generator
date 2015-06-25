@@ -1,19 +1,19 @@
-@extends('layouts.master')
+@extends({!! Config::newpixel('master_layouts') !!})
 
-@section('content')
+@section('%%crudName%%')
 
-<div class="content">
+<div class="container">
     <div class="row">
         <div class="col-md-12">
             <div class="panel panel-default">
                 <div class="panel-heading">Dashboard</div>
                 <div class="panel-body">
-                    <h1>Create New %%crudNameSingularCap%%</h1>
+                    <h1>Adaugare -  %%crudNameSingularCap%%</h1>
                     <hr/>
                     {!! Form::open(['url' => '%%crudName%%']) !!}
                     %%formFields%%
                     <div class="form-group">
-                    {!! Form::submit('Create', ['class' => 'btn btn-primary form-control']) !!}
+                    {!! Form::submit('Adauga', ['class' => 'btn btn-primary form-control']) !!}
                     </div>
                     {!! Form::close() !!}
                     @if ($errors->any())
