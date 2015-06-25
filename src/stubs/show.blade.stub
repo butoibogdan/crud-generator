@@ -1,6 +1,6 @@
-@extends('layouts.master')
+@extends('{!! Config::newpixel('master_layouts') !!}')
 
-@section('content')
+@section('%%crudName%%')
 
     <h1>%%crudNameSingularCap%%</h1>
     <div class="table-responsive">
