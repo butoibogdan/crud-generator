@@ -1,11 +1,11 @@
-@extends('layouts.master')
+@extends({!!Config::newpixel('master_layouts')!!})
 
-@section('content')
+@section('%%CrudName%%')
 
     <h1>Edit %%crudNameSingularCap%%</h1>
     <hr/>
 
-    {!! Form::model($%%crudNameSingular%%, ['method' => 'PATCH', 'action' => ['%%crudNameCap%%Controller@update', $%%crudNameSingular%%->id], 'class' => 'form-horizontal']) !!}
+    {!! Form::model($%%crudNameSingular%%, ['method' => 'PATCH', 'action' => ['{!!Config::newpixel('controller_link')!!}%%crudNameCap%%Controller@update', $%%crudNameSingular%%->id], 'class' => 'form-horizontal']) !!}
 
     %%formFields%%
     
