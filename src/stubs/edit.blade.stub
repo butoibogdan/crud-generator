@@ -1,6 +1,6 @@
 @extends({!!Config::newpixel('master_layouts')!!})
 
-@section('%%CrudName%%')
+@section('%%crudName%%')
 <div class="container">
     <div class="row">
         <div class="col-md-12">
